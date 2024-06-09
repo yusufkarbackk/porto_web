@@ -1,0 +1,23 @@
+extends layout 
+
+block content 
+    div#carouselExampleIndicators.carousel.slide
+        div.carousel-indicators
+            button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1")
+            button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2")
+            button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3")
+        div.carousel-inner
+            div.carousel-item.active
+                img(src="/images/gobatik/ss1.png" class="d-block w-100" alt="...")
+            div.carousel-item
+                img(src="/images/gobatik/ss2.png" class="d-block w-100" alt="...")
+        button.carousel-control-prev(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev")
+            span.carousel-control-prev-icon
+            span.text-black Previous
+        button.carousel-control-next(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next")
+            span.carousel-control-next-icon(aria-hidden="true")
+            span.text-black Next
+    div.container.text-center.mt-5.mb-5
+        a(href="https://github.com/GoBatik/GoBatik_API.git" class="btn btn-dark btn-lg" role="button" aria-pressed="true")
+            img(src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="width: 20px; height: 20px; margin-right: 8px;")
+            | View on GitHub

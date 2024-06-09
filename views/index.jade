@@ -1,0 +1,66 @@
+extends layout 
+block content
+
+  //- Masthead
+  header.masthead.bg-primary.text-white.text-center
+    .container.d-flex.align-items-center.flex-column
+      //- Masthead Avatar Image
+      img.masthead-avatar.mb-5(src="/images/profile3.png" alt="...")
+      //- Masthead Heading
+      h1.masthead-heading.text-uppercase.mb-0 Yusuf Rafif Karback
+      //- Icon Divider
+      .divider-custom.divider-light
+        .divider-custom-line
+        .divider-custom-icon
+          i.fas.fa-star
+        .divider-custom-line
+      //- Masthead Subheading
+      p.masthead-subheading.font-weight-light.mb-0 Backend and Cloud Developer
+  //- Portfolio Section
+  section.page-section.portfolio#portfolio
+    .container
+      //- Portfolio Section Heading
+      h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Portfolio
+      //- Icon Divider
+      .divider-custom
+        .divider-custom-line
+        .divider-custom-icon
+          i.fas.fa-star
+        .divider-custom-line
+      //- Portfolio Grid Items
+      .row.justify-content-center
+        //- Portfolio Item 1
+        a(href="/portofolio/bank_sampah").col-md-6.col-lg-4.mb-5
+          .portfolio-item.mx-auto(data-bs-toggle="modal" data-bs-target="#portfolioModal#{item}")
+            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+              .portfolio-item-caption-content.text-center.text-white
+                p Check It Out
+            img.img-fluid(src="/images/bank_sampah/ss1.png" alt="...")
+
+        a(href="/portofolio/gobatik").col-md-6.col-lg-4.mb-5
+          .portfolio-item.mx-auto(data-bs-toggle="modal" data-bs-target="#portfolioModal#{item}")
+            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+              .portfolio-item-caption-content.text-center.text-white
+                p Check It Out
+            img.img-fluid(src="/images/gobatik/ss1.png" alt="...") 
+          a(href="/portofolio/server_monitoring").col-md-6.col-lg-4.mb-5
+            .portfolio-item.mx-auto(data-bs-toggle="modal" data-bs-target="#portfolioModal#{item}")
+              .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                .portfolio-item-caption-content.text-center.text-white
+                  p Check It Out
+              img.img-fluid(src="/images/server_monitor/ss3.png" alt="...") 
+
+  //- About Section
+  section.page-section.bg-primary.text-white.mb-0#about
+    .container
+      //- About Section Heading
+      h2.page-section-heading.text-center.text-uppercase.text-white About
+      //- Icon Divider
+      .divider-custom.divider-light
+        .divider-custom-line
+        .divider-custom-icon
+          i.fas.fa-star
+        .divider-custom-line
+      //- About Section Content
+      .row
+        p.lead Multimedia and Network Engineering student at Politeknik Negeri Jakarta with hands-on experience in Cloud development, backend development, and API integration. Adept at utilizing modern technologies such Google Cloud, Firebase, and Golang to deliver impactful and efficient solutions. Strong communicator and instructor, with experience in mentoring peers and fostering collaborative environments to achieve project success.

@@ -1,0 +1,32 @@
+extends layout 
+block content
+    div#carouselExampleIndicators.carousel.slide.mt-5
+        div.carousel-indicators
+            button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1")
+            button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2")
+            button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3")
+            button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4")
+            button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5")
+
+        div.carousel-inner
+            div.carousel-item.active
+                img(src="/images/server_monitor/ss3.png" class="w-100 h-50 d-inline-block" alt="...")
+            div.carousel-item
+                img(src="/images/server_monitor/ss2.png" class="w-25 h-auto mx-auto d-block" alt="...")
+            div.carousel-item
+                img(src="/images/server_monitor/ss1.png" class="w-25 h-auto mx-auto d-block" alt="...")
+            div.carousel-item
+                img(src="/images/server_monitor/ss4.png" class="w-100 h-auto" alt="...")
+            div.carousel-item
+                img(src="/images/server_monitor/ss5.png" class="w-100 h-auto" alt="...")
+        button.carousel-control-prev(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev")
+            span.carousel-control-prev-icon
+            span.text-black Previous
+        button.carousel-control-next(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next")
+            span.carousel-control-next-icon(aria-hidden="true")
+            span.text-black Next
+
+    div.container.text-center.mt-5.mb-5
+        a(href="https://github.com/yusufkarbackk/server-monitoring-app.git" class="btn btn-dark btn-lg" role="button" aria-pressed="true")
+            img(src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="width: 20px; height: 20px; margin-right: 8px;")
+            | View on GitHub
